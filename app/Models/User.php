@@ -11,6 +11,10 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
+    public function routeNotificationForSlack($notification)
+    {
+        return 'https://hooks.slack.com/services/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';
+    }
     /**
      * The attributes that are mass assignable.
      *
